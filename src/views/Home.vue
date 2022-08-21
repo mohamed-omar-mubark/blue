@@ -1,11 +1,14 @@
 <template>
   <div class="home">
-    <h1>Home</h1>
+    <carousel></carousel>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'Home'
+    name: 'Home',
+    components: {
+      carousel: () => import('@/components/pages/home/Carousel.vue')
+    }
   }
 </script>
