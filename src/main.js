@@ -5,6 +5,9 @@ import store from './store'
 import vuetify from './plugins/vuetify'
 import i18n from './i18n'
 
+// scss
+import '@/assets/scss/app.scss'
+
 Vue.config.productionTip = false
 
 new Vue({

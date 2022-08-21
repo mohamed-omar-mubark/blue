@@ -1,0 +1,44 @@
+/*=====
+Reset
+=====*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.v-application {
+  scroll-behavior: smooth;
+  font-family: var(--english-font-family);
+
+  // heading and paragraph
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+  // links
+  a {
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  // button
+  button {
+    transition: 0.3s;
+  }
+
+  // ul list
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}

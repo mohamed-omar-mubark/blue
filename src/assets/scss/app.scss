@@ -1,0 +1,28 @@
+/*=====
+Sass structure
+=====*/
+// Structure information:
+// Auth: Mohamed Omar mubark
+// Email: mohamed.omar.mubark@gmail.com
+
+/* Start structure
+  font
+    import fonts
+  helpers
+    variables
+    reset
+    rtl
+End Structure*/
+
+/*=====
+font
+=====*/
+// english
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&family=Cairo:wght@375&family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap');
+// arabic
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap');
+/*=====
+helpers
+=====*/
+@import "./helpers/variables";
+@import "./helpers/reset";
