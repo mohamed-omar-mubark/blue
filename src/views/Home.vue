@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <carousel></carousel>
+    <benefits></benefits>
   </div>
 </template>
 
@@ -8,7 +8,7 @@
   export default {
     name: 'Home',
     components: {
-      carousel: () => import('@/components/pages/home/Carousel.vue')
+      benefits: () => import('@/components/pages/home/Benefits.vue')
     }
   }
 </script>
