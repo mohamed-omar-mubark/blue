@@ -5,6 +5,12 @@ import store from './store'
 import vuetify from './plugins/vuetify'
 import i18n from './i18n'
 
+// Vue Material icons
+import VueMaterial from 'vue-material'
+import 'vue-material/dist/vue-material.min.css'
+import 'vue-material/dist/theme/default.css'
+Vue.use(VueMaterial);
+
 // scss
 import '@/assets/scss/app.scss'
 

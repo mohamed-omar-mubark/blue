@@ -55,7 +55,7 @@
 <style lang='scss' scoped>
   .benefits {
     position: relative;
-    padding: 30px 20px;
+    padding: 30px 20px 90px;
     min-height: 500px;
     background-color: var(--main-color);
     overflow: hidden;
@@ -65,8 +65,8 @@
       bottom: 0;
       left: 0;
       width: 100%;
-      height: 90px;
-      background-image: linear-gradient(178deg, var(--main-color) 50%, #F4F4F4 calc(50% + 2px));
+      height: 100px;
+      background-image: linear-gradient(178deg, transparent 50%, var(--white-color) calc(50% + 2px));
       @media (max-width: 575px) {
         height: 40px;
       }
