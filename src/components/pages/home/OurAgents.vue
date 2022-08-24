@@ -22,7 +22,14 @@
             max-height="150"
             class="rounded-circle"
           ></v-img>
-          <span class="card-title">{{ card.title }}</span>
+          <div class="text-content">
+            <span class="card-title d-block">{{ card.title }}</span>
+            <span class="subtitle">{{ card.subtitle }}</span>
+            <p class="paragraph">
+              {{ card.description }}
+            </p>
+            <router-link :to="card.href">{{ card.link_text }}</router-link>
+          </div>
         </v-card>
       </div>
     </v-container>
@@ -104,6 +111,7 @@
       .v-card {
         padding: 35px;
         border-radius: 0;
+        max-width: 275px;
         min-height: 480px;
         transition: 0.3s;
         &:hover {
@@ -114,23 +122,27 @@
         }
         
         .v-image {
-          margin-bottom: 30px;
+          margin: 0 auto 30px;
         }
 
         .card-title {
-          font-size: 1.125rem;
-          font-weight: 400;
-          color: var(--white-color);
+          font-size: 1rem;
+          font-weight: 600;
+          color: var(--info-color);
+        }
+
+        .subtitle {
+          font-size: .875rem;
+          font-weight: 500;
+          color: var(--dark-color);
         }
 
         .paragraph {
-          padding: 10px 0 20px;
-          font-size: 1.0625rem;
+          padding: 20px 0;
+          font-size: .875rem;
           font-weight: 300;
           line-height: 1.5em;
-          color: var(--white-color);
-          max-width: 360px;
-          margin: 0 auto;
+          color: var(--secondary-color);
         }
 
         a {

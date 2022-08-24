@@ -77,7 +77,9 @@
       justify-content: center;
       align-items: center;
       gap: 1px;
-      flex-wrap: wrap;
+      @media (max-width: 1264px) {
+        flex-wrap: wrap;
+      }
 
       .v-card {
         background-color: transparent;
