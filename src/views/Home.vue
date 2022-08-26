@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <benefits></benefits>
+    <featured></featured>
     <offers></offers>
     <modernLayouts></modernLayouts>
     <ourAgents></ourAgents>
@@ -15,6 +16,7 @@
     name: 'Home',
     components: {
       benefits: () => import('@/components/pages/home/Benefits.vue'),
+      featured: () => import('@/components/pages/home/Featured.vue'),
       offers: () => import('@/components/pages/home/Offers.vue'),
       modernLayouts: () => import('@/components/pages/home/ModernLayouts.vue'),
       ourAgents: () => import('@/components/pages/home/OurAgents.vue'),
