@@ -88,17 +88,19 @@
   .our-agents {
     padding: 100px 0;
 
-    .section-title {
-      font-size: 2.1875rem;
-      font-weight: 400;
-      color: var(--dark-color);
-      margin-bottom: 10px;
-    }
-    .paragraph {
-      font-size: 1.125rem;
-      font-weight: 300;
-      color: var(--secondary-color);
-      margin-bottom: 16px;
+    .head {
+      .section-title {
+        font-size: 2.1875rem;
+        font-weight: 400;
+        color: var(--dark-color);
+        margin-bottom: 10px;
+      }
+      .paragraph {
+        font-size: 1.125rem;
+        font-weight: 300;
+        color: var(--secondary-color);
+        margin-bottom: 16px;
+      }
     }
 
     .cards {
