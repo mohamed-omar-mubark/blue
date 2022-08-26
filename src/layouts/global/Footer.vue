@@ -32,6 +32,13 @@
         <div class="col-lg-6 col-md-12">
           <div class="column">
             <span class="column-title d-block">Newsletter</span>
+            <div class="newsletter-input">
+              <input type="email" placeholder="Enter your email">
+              <button>Submit</button>
+            </div>
+            <p>
+              Blue is a premium WordPress theme for real estate where modern aesthetics are combined with tasteful simplicity.
+            </p>
           </div>
         </div>
       </v-row>
@@ -94,6 +101,44 @@
           &:hover {
             padding: 0 5px;
           }
+        }
+      }
+
+      .newsletter-input {
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+        gap: 30px;
+        @media (max-width: 575px) {
+          flex-direction: column;
+          gap: 0;
+        }
+        
+        input {
+          padding: 10px 12px;
+          margin-bottom: 20px;
+          border: none;
+          border-radius: 4px;
+          min-width: 360px;
+          background-color: var(--white-color);
+          font-size: 0.9375rem;
+          font-weight: 400;
+          color: var(--dark-color);
+          transition: 0.3s;
+          &:focus {
+            outline: none;
+          }
+        }
+
+        button {
+          padding: 10px 30px;
+          margin-bottom: 20px;
+          border: none;
+          border-radius: 4px;
+          background-color: var(--info-color);
+          font-size: 0.9375rem;
+          font-weight: 400;
+          color: var(--white-color);
         }
       }
     }
