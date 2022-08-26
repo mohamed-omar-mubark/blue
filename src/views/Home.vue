@@ -5,6 +5,7 @@
     <modernLayouts></modernLayouts>
     <ourAgents></ourAgents>
     <testimonials></testimonials>
+    <sponsors></sponsors>
   </div>
 </template>
 
@@ -16,7 +17,8 @@
       offers: () => import('@/components/pages/home/Offers.vue'),
       modernLayouts: () => import('@/components/pages/home/ModernLayouts.vue'),
       ourAgents: () => import('@/components/pages/home/OurAgents.vue'),
-      testimonials: () => import('@/components/pages/home/Testimonials.vue')
+      testimonials: () => import('@/components/pages/home/Testimonials.vue'),
+      sponsors: () => import('@/components/pages/home/Sponsors.vue')
     }
   }
 </script>
