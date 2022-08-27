@@ -4,7 +4,7 @@
       <div class="head">
         <span class="section-title">Display Latest & Featured Properties</span>
         <p class="paragraph">
-          With the features and filters provided with the Houzez widgets you can turn your visitors attention to <br> the latest listings or the ones that are most profitable to buy at the moment.
+          With the features and filters provided with the Blue widgets you can turn your visitors attention to <br> the latest listings or the ones that are most profitable to buy at the moment.
         </p>
       </div>
 

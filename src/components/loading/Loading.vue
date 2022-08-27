@@ -1,6 +1,6 @@
 <template>
   <section class='loading' v-if="show">
-    <img src="@/assets/logo.png" alt="">
+    <h1>BLUE</h1>
   </section>
 </template>
 
@@ -40,10 +40,9 @@
     justify-content: center;
     align-items: center;
     
-    img {
-      width: 100px;
-      height: 100px;
-      overflow: hidden;
+    h1 {
+      font-size: 3rem;
+      color: var(--info-color);
       animation: loading 2s linear infinite;
     }
 

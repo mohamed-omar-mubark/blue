@@ -4,6 +4,7 @@
     <featured></featured>
     <offers></offers>
     <modernLayouts></modernLayouts>
+    <contentTypes></contentTypes>
     <ourAgents></ourAgents>
     <testimonials></testimonials>
     <sponsors></sponsors>
@@ -20,6 +21,7 @@
       offers: () => import('@/components/pages/home/Offers.vue'),
       modernLayouts: () => import('@/components/pages/home/ModernLayouts.vue'),
       ourAgents: () => import('@/components/pages/home/OurAgents.vue'),
+      contentTypes: () => import('@/components/pages/home/ContentTypes.vue'),
       testimonials: () => import('@/components/pages/home/Testimonials.vue'),
       sponsors: () => import('@/components/pages/home/Sponsors.vue'),
       appFooter: () => import('@/layouts/global/Footer.vue')
