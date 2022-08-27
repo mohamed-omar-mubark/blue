@@ -169,31 +169,31 @@
           }
 
           &.card-1 {
-            background-image: url('@/assets/images/pages/home/modern-layouts/img-1.jpg');
+            background-image: url('https://432351-1355208-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2016/03/023-1024x768.jpg');
             height: 580px;
           }
 
           &.card-2 {
-            background-image: url('@/assets/images/pages/home/modern-layouts/img-2.jpg');
+            background-image: url('https://432351-1355208-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2020/03/205-1024x683.jpg');
             height: 275px;
             margin-bottom: 25px;
           }
           &.card-3 {
-            background-image: url('@/assets/images/pages/home/modern-layouts/img-3.jpg');
+            background-image: url('https://432351-1355208-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2016/03/026-1024x768.jpg');
             height: 215px;
             margin-bottom: 25px;
           }
           &.card-4 {
-            background-image: url('@/assets/images/pages/home/modern-layouts/img-4.jpg');
+            background-image: url('https://432351-1355208-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2016/03/203-1024x683.jpg');
             height: 275px;
           }
           &.card-5 {
-            background-image: url('@/assets/images/pages/home/modern-layouts/img-5.jpg');
+            background-image: url('https://432351-1355208-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2016/03/206-1024x683.jpg');
             height: 588px;
             margin-bottom: 25px;
           }
           &.card-6 {
-            background-image: url('@/assets/images/pages/home/modern-layouts/img-6.jpg');
+            background-image: url('https://432351-1355208-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2016/03/020-1024x768.jpg');
             height: 200px;
           }
         }
