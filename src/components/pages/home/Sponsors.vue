@@ -53,12 +53,12 @@
       display: flex;
       justify-content: center;
       align-items: flex-start;
-      gap: 1px;
+      gap: 10px;
       flex-wrap: wrap;
 
       .v-card {
         padding: 10px;
-        width: 220px;
+        width: max-content;
         @media (max-width: 1120px) {
           margin-bottom: 20px;
         }

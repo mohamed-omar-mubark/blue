@@ -119,7 +119,7 @@
           margin-bottom: 20px;
           border: none;
           border-radius: 4px;
-          min-width: 360px;
+          width: 360px;
           background-color: var(--white-color);
           font-size: 0.9375rem;
           font-weight: 400;
@@ -127,6 +127,9 @@
           transition: 0.3s;
           &:focus {
             outline: none;
+          }
+          @media (max-width: 575px) {
+            width: 100%;
           }
         }
 

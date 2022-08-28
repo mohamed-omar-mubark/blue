@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <banner></banner>
     <benefits></benefits>
     <featured></featured>
     <offers></offers>
@@ -16,6 +17,7 @@
   export default {
     name: 'Home',
     components: {
+      banner: () => import('@/components/pages/home/Banner.vue'),
       benefits: () => import('@/components/pages/home/Benefits.vue'),
       featured: () => import('@/components/pages/home/Featured.vue'),
       offers: () => import('@/components/pages/home/Offers.vue'),
