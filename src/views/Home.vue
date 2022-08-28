@@ -5,6 +5,7 @@
     <featured></featured>
     <offers></offers>
     <modernLayouts></modernLayouts>
+    <customForm></customForm>
     <contentTypes></contentTypes>
     <ourAgents></ourAgents>
     <testimonials></testimonials>
@@ -22,6 +23,7 @@
       featured: () => import('@/components/pages/home/Featured.vue'),
       offers: () => import('@/components/pages/home/Offers.vue'),
       modernLayouts: () => import('@/components/pages/home/ModernLayouts.vue'),
+      customForm: () => import('@/components/pages/home/CustomForm.vue'),
       ourAgents: () => import('@/components/pages/home/OurAgents.vue'),
       contentTypes: () => import('@/components/pages/home/ContentTypes.vue'),
       testimonials: () => import('@/components/pages/home/Testimonials.vue'),

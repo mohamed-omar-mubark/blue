@@ -69,7 +69,7 @@
     position: relative;
     padding: 100px 0;
     min-height: 750px;
-    background-image: url(https://default.houzez.co/wp-content/uploads/2020/03/205.jpg);
+    background-image: url('https://default.houzez.co/wp-content/uploads/2020/03/205.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -23,8 +23,6 @@
         
         setInterval(() => {
           banner.style.backgroundImage = "url('https://default.houzez.co/wp-content/uploads/2016/03/new-york.jpg')";
-          console.log(count);
-
           count += 1;
           if (count >= listItems) {
             banner.style.backgroundImage = "url('https://default.houzez.co/wp-content/uploads/2020/03/miami-beach.jpg')";
