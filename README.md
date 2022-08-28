@@ -1,4 +1,12 @@
-# blue
+# BLUE
+
+### Screenshot
+![BLUE screenshot](src/assets/blue.png)
+
+## Description
+```
+Blue is an real estate web app built with Vue 2, Vuetify.
+```
 
 ## Project setup
 ```
