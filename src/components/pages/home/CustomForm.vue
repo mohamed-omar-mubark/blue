@@ -2,8 +2,8 @@
   <section class='custom-form'>
     <v-container>
       <div class="overlay"></div>
-      <v-row>
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+      <div class="columns">
+        <div class="column">
           <div class="text-content">
             <span class="main-title">Create Custom Capture Forms And Manage Leads With The Integrated BLUE CRM</span>
             <p class="paragraph">
@@ -12,10 +12,125 @@
           </div>
         </div>
 
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-          <h1>Form In progress</h1>
+        <div class="column">
+          <div class="form-content">
+            <v-form>
+              <v-row>
+                <v-col
+                  class="d-flex"
+                  cols="12"
+                >
+                  <v-select
+                    :items="items"
+                    label="Inquiry Type"
+                    outlined
+                  ></v-select>
+                </v-col>
+
+                <v-col
+                  class="d-flex"
+                  cols="12"
+                >
+                  <v-select
+                    :items="informations"
+                    label="Your Informations"
+                    outlined
+                  ></v-select>
+                </v-col>
+
+                <v-col
+                  cols="12"
+                  sm="6"
+                >
+                  <v-text-field
+                    label="First Name"
+                    outlined
+                  ></v-text-field>
+                </v-col>
+
+                <v-col
+                  cols="12"
+                  sm="6"
+                >
+                  <v-text-field
+                    label="Last Name"
+                    outlined
+                  ></v-text-field>
+                </v-col>
+
+                <v-col
+                  cols="12"
+                >
+                  <v-text-field
+                    label="Email Address"
+                    outlined
+                    type="email"
+                  ></v-text-field>
+                </v-col>
+
+                <v-col
+                  class="d-flex"
+                  cols="12"
+                >
+                  <v-select
+                    :items="property_details"
+                    label="Property Details"
+                    outlined
+                  ></v-select>
+                </v-col>
+
+                <v-col
+                  cols="12"
+                  sm="6"
+                >
+                  <v-text-field
+                    label="Max price"
+                    outlined
+                    type="number"
+                  ></v-text-field>
+                </v-col>
+
+                <v-col
+                  cols="12"
+                  sm="6"
+                >
+                  <v-text-field
+                    label="Minimum size (Sq Ft)"
+                    outlined
+                    type="number"
+                  ></v-text-field>
+                </v-col>
+
+                <v-col
+                  cols="12"
+                  sm="6"
+                >
+                  <v-text-field
+                    label="Number of beds"
+                    outlined
+                    type="number"
+                  ></v-text-field>
+                </v-col>
+
+                <v-col
+                  cols="12"
+                  sm="6"
+                >
+                  <v-text-field
+                    label="Number of baths"
+                    outlined
+                    type="number"
+                  ></v-text-field>
+                </v-col>
+
+                <v-btn block>
+                  Submit
+                </v-btn>
+              </v-row>
+            </v-form>
+          </div>
         </div>
-      </v-row>
+      </div>
     </v-container>
   </section>
 </template>
@@ -23,6 +138,13 @@
 <script>
   export default {
     name: 'CustomForm',
+    data() {
+      return {
+        items: ['Purchase', 'Rent', 'Sell', 'Miss', 'Evaluation'],
+        informations: ["I'm a", "I'm a real estate agent", "I'm a property owner"],
+        property_details: ['Apartment', 'Lot', 'Condo', 'Shop', 'Office', 'Villa']
+      }
+    }
   };
 </script>
 
@@ -75,44 +197,78 @@
       opacity: 1;
     }
 
-    .text-content {
-      position: relative;
+    .columns {
       display: flex;
-      flex-direction: column;
-      justify-content: start;
-      align-items: flex-start;
-      gap: 10px;
-      height: 100%;
-      padding-bottom: 30px;
-
-      &::after {
-        position: absolute;
-        content: '';
-        bottom: 0;
-        left: 0;
-        width: 25%;
-        height: 1px;
-        background-color: var(--white-color);
-        border-radius: 2000px;
+      justify-content: center;
+      align-items: center;
+      gap: 100px;
+      @media (max-width: 1200px) {
+        flex-wrap: wrap;
       }
 
-      .main-title {
-        font-size: 2.1875rem;
-        font-weight: 400;
-        color: var(--white-color);
-      }
-      
-      .paragraph {
-        font-size: 1.125rem;
-        font-weight: 300;
-        line-height: 1.5em;
-        color: var(--white-color);
-      }
-    }
+      .column {
+        max-width: 550px;
+        width: 100%;
 
-    h1 {
-      position: relative;
-      color: var(--white-color);
+        .text-content {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          align-items: flex-start;
+          gap: 10px;
+          height: 100%;
+          padding-bottom: 30px;
+
+          &::after {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            left: 0;
+            width: 25%;
+            height: 1px;
+            background-color: var(--white-color);
+            border-radius: 2000px;
+          }
+
+          .main-title {
+            font-size: 2.1875rem;
+            font-weight: 400;
+            color: var(--white-color);
+          }
+          
+          .paragraph {
+            font-size: 1.125rem;
+            font-weight: 300;
+            line-height: 1.5em;
+            color: var(--white-color);
+          }
+        }
+
+        .form-content {
+          position: relative;
+          background-color: var(--white-color);
+          border-radius: 2px;
+          padding: 50px;
+          @media (max-width: 575px) {
+            padding: 40px 20px;
+          }
+
+          .col-12 {
+            padding: 0 12px;
+          }
+
+          .v-btn {
+            background-color: var(--info-color);
+            border: none;
+            box-shadow: none;
+            padding: 15px 30px;
+            font-size: 1rem;
+            font-weight: 400;
+            color: var(--white-color);
+          }
+        }
+      }
     }
   }
 </style>
