@@ -20,7 +20,7 @@
       toggleLoading() {
         setTimeout(() => {
           this.show = false;
-        }, 2);
+        }, 2000);
       }
     }
   };
