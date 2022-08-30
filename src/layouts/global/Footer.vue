@@ -55,7 +55,7 @@
 <style lang='scss' scoped>
   .footer {
     padding: 100px 0 70px;
-    background-color: var(--main-color);
+    background-color: var(--main-color) !important;
 
     .column {
       .column-title {
